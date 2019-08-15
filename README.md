@@ -1,2 +1,2 @@
-# Aplicaciones_Angular7_Firebase
-Aplicaciones con Angular 7, Typescript, IONIC 4, Firebase, API REST, HTTP y despliegue completo.
+# Angular Aplications
+Apps with Angular, Typescript, IONIC 4, Firebase, API REST, HTTP y despliegue completo.
