@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+/* Importa los iconos de FontAwesome */
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
 footer {
     color: white;
     position: fixed;
