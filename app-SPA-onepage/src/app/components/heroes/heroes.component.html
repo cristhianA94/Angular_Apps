@@ -3,79 +3,20 @@
     <h1 class="alert alert-success text-center">Héroes <small>Marvel y DC</small></h1>
     <hr>
     <div class="card-columns">
-        <div class="card">
-            <img src="assets/img/aquaman.png" class="card-img-top" alt="...">
+
+        <div class="card" *ngFor="let heroe of heroes; let i = index">
+            <!-- [src] de angular accede a los atributos del objeto -->
+            <img [src]="heroe.img" class="card-img-top" alt="heroe.nombre">
             <div class="card-body">
-                <h5 class="card-title">Aquaman</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title"> {{ heroe.nombre }} </h5>
+                <p class="card-text">{{ heroe.bio }}</p>
+                <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
 
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+                <!-- Dos formas de utilizar las rutas -->
+                <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">Ver mas buttom...</button>
+                <a [routerLink]="[ '/heroe', i ]" class="btn btn-outline-primary btn-block">Ver mas link...</a>
             </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/batman.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Batman</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/daredevil.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Dare Devil</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/hulk.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Hulk</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/spiderman.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Spiderman</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/wolverine.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Wolverine</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="assets/img/linterna-verde.png" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Linterna Verde</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
-            </div>
-
-
         </div>
 
     </div>
-
 </div>

@@ -1,0 +1,22 @@
+<div class="col mt-5 col-md-12 animationMove">
+
+    <div class="card" style="max-width:100%;">
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <img [src]="heroe.img" class="card-img" [alt]="heroe.nombre">
+            </div>
+            <div class="col-md-6" style="max-width:100%;">
+                <div class="card-body m-3">
+                    <h5 class="card-title font-weight-bold text-center text-uppercase mt-5"> {{ heroe.nombre }} </h5>
+                    <p class="card-text alert alert-secondary mt-4"> {{ heroe.bio }} </p>
+                    <p class="card-text text-center"><small class="text-muted"> {{ heroe.aparicion }} </small></p>
+                    <a [routerLink]="[ '/heroes' ]" class="btn btn-outline-danger btn-block mt-4">Regresar</a>
+                    <img *ngIf="heroe.casa == 'Marvel'" src="assets/img/marvel.jpg" [alt]="heroe.nombre" class="">
+                    <img *ngIf="heroe.casa == 'DC'" src="assets/img/dc.jpg" [alt]="heroe.nombre" class="">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+</div>

@@ -7,13 +7,14 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 /* Rutas */
 import { APP_ROUTING } from './app.routes';
-import { FooterComponent } from './components/footer/footer.component';
 
 /* Servicios */
-
+import { HeroesService } from './services/heroes.service';
+import { HeroeComponent } from './components/heroe/heroe.component';
 
 
 @NgModule({
@@ -23,13 +24,16 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    FooterComponent
+    FooterComponent,
+    HeroeComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING,
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
