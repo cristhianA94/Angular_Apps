@@ -10,7 +10,7 @@ import { HeroesService } from "../../services/heroes.service";
 })
 export class HeroeComponent{
 
-  heroe: any = {};
+  heroe: any[] = [];
 
   constructor(private activatedRoute: ActivatedRoute,
               private _heroesService: HeroesService) {
@@ -19,7 +19,7 @@ export class HeroeComponent{
       //id es el nombre de la variable que le dimos en el app.routes.ts
       //console.log( params['id'] );
       this.heroe = this._heroesService.getHeroe( params['id'] );
-       console.log(this.heroe);
+       //console.log(this.heroe);
     })
   }
 

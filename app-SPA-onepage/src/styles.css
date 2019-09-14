@@ -1,18 +1,6 @@
 /* Iconos  fontawesome*/
 
 @import "~@fortawesome/fontawesome-free/css/all.css";
-body {
-    padding-bottom: 6%;
-}
-
-footer {
-    color: white;
-    position: fixed;
-    margin-top: 5%;
-    bottom: 0px;
-    width: 100%;
-}
-
 
 /* Animaciones */
 

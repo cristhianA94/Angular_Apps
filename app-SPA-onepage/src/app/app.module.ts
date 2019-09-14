@@ -8,13 +8,14 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
 /* Rutas */
-import { APP_ROUTING } from './app.routes';
+import { AppRoutesModule } from './app.routes.module';
 
 /* Servicios */
 import { HeroesService } from './services/heroes.service';
-import { HeroeComponent } from './components/heroe/heroe.component';
 
 
 @NgModule({
@@ -25,11 +26,12 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     AboutComponent,
     HeroesComponent,
     FooterComponent,
-    HeroeComponent
+    HeroeComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING,
+    AppRoutesModule,
   ],
   providers: [
     HeroesService
