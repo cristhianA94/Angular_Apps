@@ -1,14 +1,28 @@
 # AppNgForIf
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9
 
-## Development server
+- [Install](#install)
+- [Run](#Run)
+- [Build](#Build)
+- [Test](#Running-unit-tests)
+
+## Descripción de la APP
+
+Esta aplicación web sencilla muestra componentes de Bootstrap y el uso de `*ngFor` y `*ngIf`
+Se hizo con el fin de aprender más acerca de Bootstrap y los componentes de Angular.
+
+## Screenshots
+
+![1](https://user-images.githubusercontent.com/24251638/64930715-f394fe80-d7f8-11e9-96a5-46db6f28eb38.jpg)
+
+## Install
+
+Run `npm install` for install dependencies and packages.
+
+## Run
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 

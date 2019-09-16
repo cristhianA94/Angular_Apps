@@ -1,52 +1,57 @@
 <div style="text-align:center">
-    <h1>
-        Welcome to Angular
-    </h1>
+
     <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
 
-<h1>First App with Bootstrap</h1>
+<h1 class="display-2 text-center">First App in Angular with Bootstrap</h1>
 <ul>
     <li>Nombre: {{ nombre }}</li>
     <li>Apellido: {{ apellido }}</li>
 </ul>
 
+<hr>
+
 <div class="row">
     <div class="col">
-        <hr>
-        <h1 class="display-1 text-center">Boostrap</h1>
-        <hr>
 
-        <h2 class="text-center">Rejilla</h2>
+        <h2 class="text-center">Rejilla container > row > col</h2>
         <div class="container">
             <div class="row">
-                <section class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem nisi fugit, id eius animi hic necessitatibus, enim sed labore natus fuga, autem numquam. Nobis, minus. Sed quia laudantium in?</p>
+                <section class="col-xs-12 col-sm-8 col-md-9 col-lg-9 alert-dark">
+                    <p> section > col-xs-12 col-sm-8 col-md-9 col-lg-9 ...</p>
                 </section>
-                <aside class="col-xs col-sm col-md col-lg">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id voluptates accusamus, modi nisi nesciunt nobis assumenda, provident nostrum aperiam ad error! Impedit debitis quisquam voluptatum. Laudantium, temporibus. Blanditiis,
-                        rerum.
-                    </p>
+                <aside class="col-xs col-sm col-md col-lg alert-info">
+                    <p> aside > col-xs col-sm col-md col-lg</p><br>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus officiis suscipit natus ipsam nam vel veniam eos sapiente praesentium veritatis debitis dolorum soluta eum voluptatum commodi voluptas dicta, consequatur et.</p>
                 </aside>
             </div>
             <hr>
+            <div class="row justify-content-center">
+                <section class="col-6 alert-danger ">
+                    <h3>Ajustar un contenido al centro: row justify-content-center<br></h3>
+                    <p> row > section: col-6 </p>
+                </section>
+            </div>
+            <hr>
+
             <div class="row">
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
-                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
+                <div class="col-md-1 alert-dark">.col-md-1</div>
             </div>
             <div class="row">
-                <div class="col-md-8">.col-md-8</div>
-                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-8 alert-danger">.col-md-8</div>
+                <div class="col-md-4 alert-info">.col-md-4</div>
             </div>
             <div class="row">
                 <div class="col-md-4">.col-md-4</div>
@@ -58,11 +63,12 @@
                 <div class="col-md-6">.col-md-6</div>
             </div>
         </div>
+
         <hr>
         <h2 class="text-center">Tipografias</h2>
         <hr>
-        <p>Texto <span class="text-muted">resaltado</span></p>
         <p> Normal: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore amet nihil beatae aliquid laborum culpa eos animi sit minus fuga excepturi maxime, quam accusamus molestias consequuntur, optio porro earum!</p>
+        <p class="text-muted">resaltado text-muted</p>
         <p class="lead">Lead: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore amet nihil beatae aliquid laborum culpa eos animi sit minus fuga excepturi maxime, quam accusamus molestias consequuntur, optio porro earum!</p>
         <p class="font-weight-normal">Normal</p>
         <p class="font-weight-bold">font-weight-bold</p>
@@ -77,6 +83,7 @@
         <p class="text-capitalize">text-capitalize Capital primeras letras</p>
         <h3>Example heading <span class="badge badge-secondary"> badge-secondary </span></h3>
 
+        <hr>
 
         <div class="alert alert-primary" role="alert">
             alert alert-primary
@@ -112,18 +119,18 @@
         <h2 class="text-center">Iconos</h2>
         <hr>
         <code>
-            npm install --save-dev @fortawesome/fontawesome-free <br>
-            # Importar los estilos en el Style.css del proyecto en general <br>
-            @import "~@fortawesome/fontawesome-free/css/all.css";
-        </code>
+      npm install --save-dev @fortawesome/fontawesome-free <br>
+      # Importar los estilos en el Style.css del proyecto en general <br>
+      @import "~@fortawesome/fontawesome-free/css/all.css";
+    </code>
         <hr>
         <button type="button" class="btn btn-info">
-            <i class="fas fa-skull fa-xs fa-spin"></i> fas fa-skull fa-xs fa-spin
-        </button>
+      <i class="fas fa-skull fa-xs fa-spin"></i> fas fa-skull fa-xs fa-spin
+    </button>
 
         <button type="button" class="btn btn-light">
-                <i class="fas fa-address-book"></i> Hola
-        </button>
+      <i class="fas fa-address-book"></i> Hola
+    </button>
 
         <i class="fab fa-angular ">Hola</i>
         <hr>
@@ -136,7 +143,8 @@
         <p><strong>strong</strong></p>
         <p><em>em</em></p>
         <var>var</var> = <var>m</var><var>x</var> + <var>b</var>
-        <p>To switch directories, type <kbd>kbd</kbd> followed by the name of the directory.<br> To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+        <p>To switch directories, type <kbd>kbd</kbd> followed by the name of the directory.<br> To edit settings, press
+            <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
         </p>
 
         <blockquote class="blockquote">
@@ -154,7 +162,8 @@
         </blockquote>
 
         <blockquote class="blockquote text-right">
-            <p class="mb-0">Cita a la derecha: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <p class="mb-0">Cita a la derecha: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
             <footer class="blockquote-footer">Citaaaa <cite title="Source Title">Source Title</cite></footer>
         </blockquote>
 
@@ -302,25 +311,6 @@
 
         <hr>
 
-        <h2 class="text-center">Dropdowns y Botomm Groups</h2>
-        <hr>
-
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <button type="button" class="btn btn-secondary">1</button>
-            <button type="button" class="btn btn-secondary">2</button>
-
-            <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </button>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item" href="#">Dropdown link</a>
-                    <a class="dropdown-item" href="#">Dropdown link</a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
         <h2 class="text-center">List groups</h2>
         <ul class="list-group">
             ul
@@ -338,28 +328,36 @@
         <ul class="list-group">
             <a href="#" class="list-group-item">list-group-item <span class="badge">span<> badge 100</span></a>
             <a href="#" class="list-group-item">Enlace <span class="badge badge-primary"> badge badge-primary 100</span></a>
-            <a href="#" class="list-group-item">Enlace <span class="badge badge-danger badge-pill">badge badge-danger badge-pill 100</span></a>
-            <a href="#" class="list-group-item d-flex justify-content-between align-items-md-center">list-group-item d-flex justify-content-between align-items-md-center <span class="badge badge-danger badge-pill">badge badge-danger badge-pill 100</span></a>
+            <a href="#" class="list-group-item">Enlace <span class="badge badge-danger badge-pill">badge badge-danger
+          badge-pill 100</span></a>
+            <a href="#" class="list-group-item d-flex justify-content-between align-items-md-center">list-group-item d-flex
+        justify-content-between align-items-md-center <span class="badge badge-danger badge-pill">badge badge-danger
+          badge-pill 100</span></a>
         </ul>
         <hr>
         <div class="list-group">div
             <> list-group
                 <a href="#" class="list-group-item list-group-item-action">a<> list-group-item list-group-item-action
-                <div class="d-flex w-100 justify-content-between">
-                    <h5>Mensaje</h5>
-                    <small>3 dias atras</small>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea inventore, quibusdam quo dolorum, ratione eaque dicta accusantium rem, quia repudiandae perspiciatis ut fugiat magnam velit impedit cumque quidem ipsa.</p>
-            </a>
+            <div class="d-flex w-100 justify-content-between">
+              <h5>Mensaje</h5>
+              <small>3 dias atras</small>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea inventore, quibusdam quo dolorum, ratione
+              eaque dicta accusantium rem, quia repudiandae perspiciatis ut fugiat magnam velit impedit cumque quidem
+              ipsa.</p>
+        </a>
         </div>
         <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">a<> list-group-item list-group-item-action flex-column align-items-start active
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Mensaje</h5>
-                        <small>3 dias atras</small>
-                    </div>
-                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea inventore, quibusdam quo dolorum, ratione eaque dicta accusantium rem, quia repudiandae perspiciatis ut fugiat magnam velit impedit cumque quidem ipsa.</p>
-                </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">a<>
+          list-group-item list-group-item-action flex-column align-items-start active
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Mensaje</h5>
+            <small>3 dias atras</small>
+          </div>
+          <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea inventore, quibusdam quo
+            dolorum, ratione eaque dicta accusantium rem, quia repudiandae perspiciatis ut fugiat magnam velit impedit
+            cumque quidem ipsa.</p>
+      </a>
         </div>
         <hr>
         <ul class="breadcrumb">
@@ -420,10 +418,14 @@
             </div>
             <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        ...</div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...
+                    </div>
                 </div>
             </div>
         </div>
@@ -452,8 +454,8 @@
         <nav class="navbar navbar-dark bg-primary">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -465,8 +467,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                              </a>
+              Dropdown
+            </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -496,8 +498,8 @@
 
             <div class="alert alert-dark">
                 <button type="button" class="close" data-dismiss="alert">
-                        class="close"<span>&times;</span>
-            </button>
+          class="close"<span>&times;</span>
+        </button>
                 <strong>Alerta sin efecto</strong> lorem impsum
                 <a href=" # " class=" alert-link ">Click here</a>
             </div>
@@ -507,8 +509,8 @@
                     div: alert alert-danger alert-dismissible fade show
                 </p>
                 <button type="button" class="close" data-dismiss="alert">
-                <span>&times;</span>
-            </button>
+          <span>&times;</span>
+        </button>
                 <strong>Alerta con efecto</strong> lorem impsum
                 <a href=" # " class=" alert-link ">Click here</a>
             </div>
@@ -550,12 +552,12 @@
         </div>
 
         <button (click)="mostrar=! mostrar " class="btn btn-outline-success btn-block ">
-            Mostrar/Ocultar
-        </button>
+      Mostrar/Ocultar
+    </button>
 
     </div>
 
-    <div class="col ">
+    <div class="col mb-5">
         <h1>*ngFor</h1>
         <hr>
         <ul class="list-group ">
@@ -566,5 +568,3 @@
     </div>
 
 </div>
-<hr>
-<h2>Holaaa</h2>
