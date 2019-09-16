@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 /* Componentes */
 import { AppComponent } from './app.component';
@@ -10,6 +10,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BusquedaComponent } from './components/busqueda/busqueda.component';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 /* Rutas */
 import { AppRoutesModule } from './app.routes.module';
@@ -27,7 +28,8 @@ import { HeroesService } from './services/heroes.service';
     HeroesComponent,
     FooterComponent,
     HeroeComponent,
-    BusquedaComponent
+    BusquedaComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,

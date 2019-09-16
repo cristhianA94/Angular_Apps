@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
 import { HeroesService, Heroe } from '../../services/heroes.service';
-//Permita manejar rutas
 import { Router } from '@angular/router';
 
 

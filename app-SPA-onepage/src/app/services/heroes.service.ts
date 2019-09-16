@@ -72,22 +72,39 @@ export class HeroesService {
   }
 
   /* MEtodo para busqueda, retorna un arrego de heroes */
-  buscarHeroes(termino: string) :Heroe[] {
+  buscarHeroes(termino: string): Heroe[] {
 
     let heroesArre: Heroe[] = []
     termino = termino.toLowerCase();
 
-    for (let heroe of this.heroes) {
+    for (let i = 0; i < this.heroes.length; i++) {
+      //
+      let heroe = this.heroes[i];
+
       let nombre = heroe.nombre.toLowerCase();
       /* Si coincide el termino buscado con el nombre del heroe retorna >0, sino un 0  */
       if (nombre.indexOf(termino) >= 0) {
+        heroe.id = i;
         /* Agrega el valor al arreglo temporal*/
         heroesArre.push(heroe)
       }
     }
     return heroesArre;
+
+    /* for(let heroe of this.heroes) {
+      let nombre = heroe.nombre.toLowerCase();
+      // Si coincide el termino buscado con el nombre del heroe retorna >0, sino un 0 
+      if (nombre.indexOf(termino) >= 0) {
+        // Agrega el valor al arreglo temporal
+        heroesArre.push(heroe)
+      }
+    }
+      return heroesArre; */
+
   }
 }
+
+
 
 //Clase Heroe
 export interface Heroe {
@@ -96,5 +113,7 @@ export interface Heroe {
   img: string;
   aparicion: string;
   casa: string;
+  // id para la busqueda
+  id?: number;
 }
 
