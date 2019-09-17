@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 2168px;
+}
