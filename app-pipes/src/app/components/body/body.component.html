@@ -101,23 +101,133 @@
                     <td> {{ a | percent:'2.2-2' }} </td>
                 </tr>
 
+                <tr>
+                    <th> {{ salario }} </th>
+                    <td> | currency </td>
+                    <td> Convierte el numero en formato de moneda</td>
+                    <td> {{ salario | currency }} </td>
+                </tr>
+                <tr>
+                    <th> {{ salario }} </th>
+                    <td> | currency:'EUR' </td>
+                    <td> Convierte el numero en formato de moneda:
+                        <a target="_blank" href=" https://es.wikipedia.org/wiki/ISO_4217 ">https://es.wikipedia.org/wiki/ISO_4217</a> </td>
+                    <td> {{ salario | currency:'EUR' }} </td>
+                </tr>
+                <tr>
+                    <th> {{ salario }} </th>
+                    <td> | currency:'EUR':true:'4.0-0' </td>
+                    <td> Convierte el numero en formato de moneda y con enteros y decimales escogidos: '4.0-0': </td>
+                    <td> {{ salario | currency:'EUR':true:'4.0-0' }} </td>
+                </tr>
+                <tr>
+                    <th> {{ heroe }} </th>
+                    <td> | json </td>
+                    <td> Junto con la etiqueta
+                        < pre> se puede representar un formato JSON </td>
+                    <td> {{ heroe | json }} </td>
+                </tr>
+
+                <tr>
+                    <th> {{ valorPromesa }} </th>
+                    <td> | async </td>
+                    <td> Muestra informacion renderizada que viene de
+                        < Obersables> o
+                            < Promises>
+                    </td>
+                    <td> {{ valorPromesa | async }} </td>
+                </tr>
+
+                <tr>
+                    <th> {{ fecha }} </th>
+                    <td> | date </td>
+                    <td> Formato para fechas y horas</td>
+                    <td> {{ fecha | date }} </td>
+                </tr>
+                <tr>
+                    <th> {{ fecha }} </th>
+                    <td> | date:'medium' </td>
+                    <td> Formato para fechas y horas</td>
+                    <td> {{ fecha | date:'medium' }} </td>
+                </tr>
+                <tr>
+                    <th> {{ fecha }} </th>
+                    <td> | date:'shortDate' </td>
+                    <td> Formato para fechas y horas</td>
+                    <td> {{ fecha | date:'shortDate' }} </td>
+                </tr>
+                <tr>
+                    <th> {{ fecha }} </th>
+                    <td> | date:'mediumTime' </td>
+                    <td> Formato para fechas y horas</td>
+                    <td> {{ fecha | date:'mediumTime' }} </td>
+                </tr>
+                <tr>
+                    <th> {{ fecha }} </th>
+                    <td> | date:'MMMM - dd' </td>
+                    <td> Formato para fechas y horas</td>
+                    <td> {{ fecha | date:'MMMM - dd' }} </td>
+                </tr>
+
+                <tr>
+                    <th> {{ text2 }} </th>
+                    <td> | capitalizado </td>
+                    <td> Pipe personalizado 1: capitaliza todas las palabras de un texto</td>
+                    <td> {{ text2 | capitalizado }} </td>
+                </tr>
+                <tr>
+                    <th> {{ text2 }} </th>
+                    <td> | capitalizado:false </td>
+                    <td> Pipe personalizado 1: capitaliza la primera palabra de un texto</td>
+                    <td> {{ text2 | capitalizado:false }} </td>
+                </tr>
+
+                <tr>
+                    <th> {{ texto }} </th>
+                    <td> | contrasena:{{ activar }}
+                        <button (click)="activar=! activar" type="button" class="btn btn-outline-success">Activar/Desactivar</button>
+                    </td>
+                    <td> Pipe personalizado 3: Permite esconcder u ocultar contrasena</td>
+                    <td> {{ texto | contrasena: activar }} </td>
+                </tr>
+
+
             </tbody>
         </table>
+    </div>
 
+    <!-- Pruebas especificas -->
+    <h2 class="alert alert-warning display-4 text-center mt-3">Pruebas</h2>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <h4 class="alert alert-info ">Slice en NgFor</h4>
+            <ul>
+                <li *ngFor="let i of arreglo | slice:5:9 "> {{ i }} </li>
+            </ul>
+        </div>
 
+        <div class="col-6 ">
+            <h4 class="alert alert-info ">JSON pre> </h4>
+            <pre>
+                {{ heroe | json}}
+            </pre>
+        </div>
+    </div>
 
-        <h4 class="alert alert-warning">Slice en NgFor</h4>
-        <ul>
-            <li *ngFor="let i of arreglo | slice:5:9"> {{ i }} </li>
-        </ul>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <h4 class="alert alert-info ">Youtube Video</h4>
+            <iframe width="100%" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
     </div>
 
 </div>
 <!-- Nubes fondo -->
 <div>
-    <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
-    <path id="Path_39" data-name="Path 39"
-      d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z"
-      transform="translate(142.69 -634.312)" fill="#eee" />
+    <svg id="clouds " alt="Gray Clouds Background " xmlns="http://www.w3.org/2000/svg " width="2611.084 " height="485.677 " viewBox="0 0 2611.084 485.677 ">
+    <path id="Path_39 " data-name="Path 39 "
+      d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z "
+      transform="translate(142.69 -634.312) " fill="#eee " />
   </svg>
-</div>
+</div>b
