@@ -1,0 +1,63 @@
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" width="30" height="30" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h2 class="alert alert-success display-4 text-center mt-3">API-REST From https://randomuser.me</h2>
+    <hr>
+    <div class="row justify-content-center">
+
+        <div class="card-deck col-3 mt-1 mb-3" *ngFor="let user of users">
+            <div class=" card text-center">
+                <img [src]="user.picture.thumbnail" class="mx-auto mt-2" style="text-align: center; width: 50%">
+                <div class="card-body ">
+                    <h5 class="card-title "> {{ user.name.title | uppercase }} {{ user.name.first | uppercase }} {{ user.name.last | uppercase }}</h5>
+                    <p class="card-text ">Vive en: {{ user.location.city | uppercase }} </p>
+                    <p class="card-text ">Calle: {{ user.location.street }} </p>
+                </div>
+                <div class="card-footer ">
+                    <div class="card-footer ">
+                        <small class="text-muted "> Phone: {{ user.cell }}</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <footer class="footer bg-dark text-center mt-5 text-white ">
+        <div class="container p-2 ">
+            <p>
+                &copy; Cristhian A. Apolo 2019
+            </p>
+            <hr>
+            <div class="align-content-center mb-3 ">
+                <a href="https://github.com/cristhianA94 " class="alert alert-warning "><i class="fab fa-github-square "> GitHub</i></a>
+                <a href="https://www.facebook.com/cristian.apolocevallos " class="alert alert-warning "><i class="fab fa-github "> Facebook</i></a>
+            </div>
+        </div>
+    </footer>
