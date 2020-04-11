@@ -1,14 +1,29 @@
-# AppMiscelaneas
+# AppNgForIf
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3
 
-## Development server
+- [Install](#install)
+- [Run](#Run)
+- [Build](#Build)
+- [Test](#Running-unit-tests)
+
+## Descripción de la APP
+
+Esta simple app muestra el uso de `*ngStyle`, `*ngClass`, `*ngSwitch`, `*Directives` y rutas hijas.
+Se hizo con el fin de aprender más acerca de estas funcionalidades de Angular.
+
+## Screenshots
+
+![1](https://user-images.githubusercontent.com/24251638/79055967-0ea4e100-7c17-11ea-8439-90294869f5cf.jpg)
+![2](https://user-images.githubusercontent.com/24251638/79055972-1c5a6680-7c17-11ea-9650-7509be58ea14.jpg)
+
+## Install
+
+Run `npm install` for install dependencies and packages.
+
+## Run
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
