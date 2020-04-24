@@ -1,0 +1,36 @@
+<h3>Héroe <small> nombre </small></h3>
+<hr>
+
+<div class="row animate fadeIn fast">
+    <form [formGroup]="heroeForm" (ngSubmit)="guardar()" class="example-form" autocomplete="on">
+        <mat-form-field class="buttons-form" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <mat-icon matSuffix>person</mat-icon>
+            <input matInput formControlName="nombre" required autofocus>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="buttons-form" appearance="outline">
+            <mat-label>Casa</mat-label>
+            <mat-select formControlName="casa">
+                <mat-option value="DC">DC</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="buttons-form" appearance="outline">
+            <mat-label>Biografia</mat-label>
+            <textarea matInput formControlName="biografia"></textarea>
+        </mat-form-field>
+        <br>
+        <div class="text-center">
+            <button type="submit" [disabled]="!heroeForm.valid" class="mr-3" mat-raised-button color="primary" aria-label="Add heroe">
+                Agregar heroe
+                <mat-icon>save</mat-icon>
+            </button>
+            <button routerLink="['heroes']" mat-fab aria-label="Add heroe" color="warn">
+                <mat-icon>arrow_back_ios</mat-icon>
+            </button>
+        </div>
+
+    </form>
+
+</div>

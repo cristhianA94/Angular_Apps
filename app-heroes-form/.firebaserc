@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "heroes-app-90f4e": {
+      "hosting": {
+        "heroes-api": [
+          "heroes-app-90f4e"
+        ]
+      }
+    }
+  }
+}
