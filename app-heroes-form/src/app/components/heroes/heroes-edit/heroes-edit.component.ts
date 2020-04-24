@@ -1,4 +1,4 @@
- yimport { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Heroe } from 'src/app/models/heroe';
